@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--****************************************************************
+This is the sales page for our
+Web Based Applications course.
+Written, verified, and posted  by Alexander Davis on 10/24/2022
+******************************************************************-->
+<html lang="en-US">
+<head>
+    <link rel="shortcut icon" href="images/favicon.ico"> 
+    <title> Information Sales </title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Implement the Slicknav plugin-->
+    <title> Bicycle Services </title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>  
+</head>
+    <meta charset="utf-8">
+    <body>
+        <header> 
+            <h1 class="sales-header">Hi, thanks for visiting our sales page!</h1>
+        </header>
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="services.htm"> Service </a></li>
+                <li><a href="rentals.htm"> Rentals </a></li>
+                <li><a href="sales.htm"> Sales </a></li>
+                <li><a href="contact.htm"> Contact </a></li>
+                <li><a href="index.htm"> Home </a></li>
+            </ul>
+        </nav>
+        <!-- Establish our features models for sale-->
+        <h2> Here, we have a selection of four models ready for purchase</h2>
+        <p>
+            <ul>              
+                <li>The Niner Air 9 2-Star - Mountain bike - MSRP: From &#36;1,999.00 </li>
+                <li> Santa Cruz Chameleon AL D R 2021 - Mountain bike - MSRP: From &#36;2,149.00 </li>
+                <li> SAVADECK Carbon - Road Bike - MSRP: From &#36;1,299.00 </li>
+                <li> Schwinn Regioneer 26 - Townie Bike - MSRPl From &#36;390.00 </li>
+            </ul>
+        </p>
+        <h2>Please visit our contact page using the navigation link to learn more about our products</h2> 
+</body>
+<!-- A little promo video -->
+<footer class="sales_footer">
+    <video controls id="videoplayer"
+    src="media/cyclist.mp4" alt="cyclist"
+    width="480" height="250"
+    preload="auto>">            
+    </video>
+</footer>     
+</html>

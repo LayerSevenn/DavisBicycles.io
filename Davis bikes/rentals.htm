@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--****************************************************************
+This is Rental page for our
+Web Based Applications course bicycle project.
+Written, verified, and posted  by Alexander Davis on 10/24/2022
+******************************************************************-->
+<html lang="en-US">
+<head>
+    <link rel="shortcut icon" href="images/favicon.ico"> 
+    <title> Davis's ♣ Bicycle Rental </title>
+    <meta charset="utf-8">
+    <!-- Implement the Slicknav plugin-->
+    <link rel="stylesheet" href="styles/main.css">
+    <title> Bicycle Services </title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>  
+</head>
+<body class="rentals-body" id="rbodyformat">
+    <header class="rentals-header">
+        <h1>
+            Hi there, if you need a bicycle for rent, you've come to the <i>right</i> place! 
+            <br>
+            Our variety of bikes range between styles of Street Bikes and Mountain Bikes</h1>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="services.htm"> Service </a></li>
+            <li><a href="rentals.htm"> Rentals </a></li>
+            <li><a href="sales.htm"> Sales </a></li>
+            <li><a href="contact.htm"> Contact </a></li>
+            <li><a href="index.htm"> Home </a></li>
+        </ul>
+    </nav>    
+    <main class="rentals-main">
+        <h2 id="rh2format"> Please Carefully Review Our Terms of service and liability waiver <b><i>BEFORE</i></b> filling out our request form</h2>       
+        <img id="rentals-sign" src="images/forrent.jpg" alt="rentjpg"> 
+    </main> 
+    <aside class="rentals-aside"> 
+<!--Create classes for type and the desccription of rental-->
+        <h3 id="rh3format"> Selections </h3>
+        <p" id="rpformat">
+            <p class="type"> Mountain Starter </p>
+            <p class="desc"> 25 LBS Aluminum <br>
+                &#36;30.00 Per day, &#36;140.00 Weekly </p>
+            <p class="type"> Mountain <b>Pro</b> </p>
+            <p class="desc"> 19 LBS Carbon Fiber <br> 
+                &#36;60.00 Per day, &#36;350.00 Weekly </p>
+            <p class="type"> Street Starter </p>
+            <p class="desc"> 18 LBS Aluminium <br>
+                &#36;40.00 Per day, &#36;210.00 Weekly </p>
+            <p class="type"> Street <b>Pro</b> </p>
+            <p class="desc"> 14 LBS Carbon Fiber <br>
+                &#36;70 Per day, &#36;420.00 Weekly </p> 
+            <p class="type"> Helmet Rental &#36;15.00 Per day, &#36;30.00 Weekly</p>
+        </p>
+    </aside>
+</body>
+<!--Liability waiver, user notice-->
+<footer class="rentals-footer" id="rfootformat">
+
+    <p><b>Note: Davis Bicycle is not responsible for any injury that occurs while using our equipment. It is the responsibility
+        <br>
+    of the rider to ensure that proper safety protocols are met, that equipment is used correctly, and that they assume any risk
+    <br>
+    at navigating an evnironment on our bicycles. The customer is responsible for any damage that occurs, and a security credit card hold is required at the time of use.</b></p>
+
+</footer>
+</html>

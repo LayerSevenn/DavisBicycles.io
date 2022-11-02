@@ -1,0 +1,283 @@
+/*****************************************************************
+This is the styling code for our index.htm file
+Written, verified, and posted by Alexander Davis on 10/24/2022
+*******************************************************************/
+
+body {
+    width: 99%;
+    font-size: 100%;
+    max-width: 725px;
+    padding: 15px;
+    background-color: blanchedalmond;}
+h1 {float: right;
+    padding: 0; }
+
+/*Create a welcoming figcaption greeting*/
+figure {
+    display: block;
+    margin: 10px; }                          
+figcaption {
+    max-width:fit-content;
+    display: block;
+    font-weight: bold;
+    padding-top: .5em;
+    border-bottom: 1px solid purple; }
+
+/*style the header img*/
+#blue_border {
+    display: block;
+    width: 10%;
+    max-width: 13%;
+    border: 2px blue solid; 
+    border-radius: 10px; }
+
+    /* Configure our nav menu for a RWD, Flex display */
+#nav_menu ul {
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background: #facd8a;
+    padding: .5em 0;
+    text-decoration: none;
+    border-top: 2px solid #3b0d7b;
+    border-bottom: 2px solid  #3b0d7b; }
+#nav_menu ul li {
+    text-align: center;
+    margin: 0 15px 0 15px;
+    width: 18%;
+    display: inline; }
+#nav_menu ul li a {
+    font-weight: bold;
+    color:blue; }
+
+/*remove the underline from the hyperlinked nav menu */
+#nav_menu a { text-decoration: none; }
+#nav_menu li { background: wheat; }
+
+/* Configure the style for the pictures
+ of the original bikes that are on sale */
+.ForSalePromo {
+    width: 25%;
+    max-width: 400px;
+    margin-bottom: .25em; } 
+.index-footer {
+    width: 100%;
+    padding-left: 75px;
+    max-width: inherit;
+    text-align: center;
+    position: static;
+    margin-left: auto;
+    margin-right: auto; }
+    
+/* Let's integrate the CSS of our rental page here*/
+#rentals-sign {
+    width: 22%;}
+.rentals-aside {
+    width:19%;
+    float: right;
+    display: block;
+    border: 10px solid ;
+    border-color: black;
+    border-width: 5px 10px 5px 10px;
+    text-align: center;
+    color: #3b0d7b; }
+
+/* some CSS for our contact page */
+#contact-img { width: 35%; }
+
+/*Style the consumer warning and liability notice*/
+#rfootformat{
+    padding-left: 25%;
+    padding-top: 20%;
+    float: left; }
+.sales_footer {
+    display: block;
+    align-items: center; }
+
+/*Style our Service page to include borders to our services table*/
+table {
+    border: 1px solid black;
+    border-collapse: collapse; }
+th, td {
+    border: 1px solid black;
+    padding: .2em .7em;
+    text-align: right; }
+th, td {
+    display: block;
+    text-align: left; }
+thead { display: none; }
+tr td:first-child {
+    font-weight: bold;
+    font-size: 105%;
+    background-color: wheat; }
+/*th.left, td.left { text-align: left; }
+thead, tfoot { background-color: wheat;}            THIS IS COMMENTED OUT BECAUSE THIS WAS FOR THE ORIGINAL FORMATTED TABLE
+tfoot { font-weight: bold; } */
+
+/* Create the contact page form*/
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em; }
+legend {
+    color: #3b0d7b;
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em; }
+label, input, select {
+    font-size: 90%; }
+label {
+    float: left;
+    width: 12em;
+    text-align:initial; }
+.change-width {
+    width: 2.9em; }
+.button-width {
+    width: 12em; }
+#submit-button {
+    margin-left: 13em; }
+.field-options { 
+    text-align: left;
+    float: none; } 
+#field1, #field2 { border: none;}
+.field-options { 
+    margin-left: 5em;
+    margin-bottom: .5em; }
+input, select {
+    width: 15em;
+    margin-left: .25em;
+    margin-bottom: .25em; }
+
+    
+/*Implement go/nogo validation*/
+input:required { border: 3px solid red; }
+input:valid { border: 1px solid black; }
+input:invalid { box-shadow: none;}
+br { clear: both; }
+#button input { width: 10em; }
+
+/*Establish Mobile First View */
+#mobile_menu { 
+    display: block;
+    margin-bottom: 1em; }
+.slicknav_menu { background-color: #facd8a !important; }
+#nav_menu { display: none; }
+
+/*Media Query Entries, Mobile first*/
+@media screen and (min-width: 100px) {
+    .ind-header {
+        padding-bottom: 20%;
+        width: 70% }
+    h1 { font-size: .8em; }
+    h2 { font-size: .85em; }
+    h3 { font-size: .8em; }
+    p { font-size: .75em; }
+    li { font-size: .75em; }
+    td { font-size: .8em; }
+    th { font-size: .9em }
+    label { font-size: 1em; }
+    #blue_border {
+        min-width: 33%;
+        margin-right: 2%; }
+    /*th, td {
+        display: block;
+        text-align: left; }
+    thead { display: none; }
+    tr td:first-child {            THIS IS COMMENTED OUT BECAUSE THIS WAS FOR TRYING TO CHANGE THE FORMAT TO SINGLE CELLED WHEN DOWNSIZED
+        font-weight: bold;          THIS HAS TEMPORARILY BEEN RELOCATED TO THE MAIN CSS
+        font-size: 105%;
+        background-color: wheat; }*/
+    tfoot { display: none; } 
+    table { width: 81%;}
+    input, label, legend, select {
+        font-size: .8em; }
+    .field-options {
+        width: 20%;
+        margin-left: 8em; } }
+
+
+ /* Here the mobile menu discontinues, and our normal navigation menu appears */   
+@media screen and (min-width: 582px) {
+    .ind-header {
+        padding-right: 5px;
+        padding-bottom: 5%;
+        width: 95%; }
+    #blue_border{
+        min-width: 34%;
+        margin-right: 2px;}
+    #nav_menu li { font-size: 1.2em; }
+    h1 { font-size: 1.4em;}
+    h2 { font-size: 1em;}
+    h3 { font-size: .95em;}
+    p {font-size: .9em;}
+    li { font-size: .9em;}
+    td { font-size: 1em; }
+    th { font-size: 1.1em; }
+    table { width: 85%; }
+    /*th, td {
+        display: initial;    THIS IS MY ATTEMPT TO TRY AND FORMAT THE TABLE BACK TO ITS ORIGINAL DESIGN / NOT MOBILE VIEW 
+        text-align: none;} 
+    thead { display: block; } */
+    input, label, select {
+        font-size: .95em; }
+    .field-options { width: 30%;}
+    #nav_menu { 
+        display: block; }
+    #mobile_menu {         
+        display: none; } } 
+        
+@media only screen and (min-width: 769px) {
+    body {
+        max-width:100%; }
+    .ind-header {
+        width: 70%; }
+    #blue_border {
+        margin-right: 2%;
+        min-width: 36%; }
+    #nav_menu li { font-size: 1.3em; }
+    h1 { font-size: 1.7em; }
+    h2 { font-size: 1.05em; }
+    h3 { font-size: 1em; }
+    p { font-size: .95em; }
+    li { font-size: .95em; }
+    td { font-size: 1.3em; }
+    th { font-size: 1.4em;  }
+    table { width: 90%; }
+    #category { background-color: wheat; }
+    .field-options { float: right; }
+    input, label, select {
+        font-size: 1em; }
+    .field-options{
+        width: 35%; } }
+
+
+@media only screen and (min-width: 1200px) {
+    #blue_border {
+        margin-right: 1%; }
+    .rentals-header {
+        width: 80%; }
+    .sales-header {
+        width:65%;
+        font-size: 1.5em; }
+    #nav_menu li { 
+        width: 100%;
+        font-size: 1.5em; }
+    h1 { font-size: 1.85em; }
+    h2 { font-size: 1.15em; }
+    h3 { font-size: 1.1em; }
+    p { font-size: 1em; }
+    li { font-size: 1em; } 
+    td { font-size: 1.5em; }
+    th { font-size: 1.6em; }
+    label { font-size: 1.1em; }
+    legend { font-size: 1.1em;}
+    table { width: 95%; }
+    input, label, select {
+        font-size: 1.2em; } 
+    .field-options { 
+        width: 37%;
+        margin-left: 1em; } }
+
+@media screen and (min-width: 1201px){
+    body { max-width: 2000px; } }

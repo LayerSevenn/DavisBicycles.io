@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--****************************************************************
+This is the primary page for our
+Web Based Applications course.
+Written, verified, and posted by Alexander Davis on 10/24/2022
+******************************************************************-->
+<html lang="en-US">
+<head>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title> Davis's Bicycles | Bikes ♣ Gear '</title>
+    <!--Meta data to increase SEO -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Thanks for visiting our page, we are a
+                family owned business from the midwest." content="proudly serving our
+                community since 2022" >
+    <link rel="stylesheet" href="styles/main.css">
+    <title> Bicycle Services </title>
+    <link rel="stylesheet" href="styles/main.css">
+    
+        <!-- Implement the Slicknav plugin-->
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>  
+</head>
+<body class="index-body">
+    <header class="ind-header">
+        <!-- We can create rollover features without having to use JS or CSS, this shows one method-->
+        <figure> 
+            <img id="blue_border" src="images/headerimg1.jpg" onmouseover="this.src='images/hover.jpg'" onmouseout="this.src='images/headerimg1.jpg'" width="250"  alt="bicycle">                
+            <figcaption> From our family to yours </figcaption>
+        </figure>
+        <h1 id="h1format"> ♣ <i>The Davis Bicycle Shoppe</i> ♣ </h1>             
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="services.htm"> Service </a></li>
+            <li><a href="rentals.htm"> Rentals </a></li>
+            <li><a href="sales.htm"> Sales </a></li>
+            <li><a href="contact.htm"> Contact </a></li>
+            <li><a href="index.htm"> Home </a></li>
+        </ul>
+    </nav>
+    <main class="index-main">
+        <p>Click <a href="contact.htm">Here</a> to contact us on how to 
+            begin your subscription to our newsletter <i>Cyclists Today!</i></p>      
+<!--Welcome Message-->
+        <p> I hope you have found yourself well. <br><br> If you have
+            any questions, please feel free to message us. Our staff will
+        respond at our <br> <b><i>earliest</i></b> convenience!</p>
+        <br>
+
+        <!--Make a list with pictures of our offered models-->
+        <h3 id="promo"> Stocked Models: </h3>
+        <ul id="promo_list">
+            <li> Our mountain bike select! </li> <img class="ForSalePromo" src="images/download.jpg" alt="mountainbike">
+            <li> Our BMX trickster!</li> <img class="ForSalePromo" src="images/bmxtrix.jpg" alt="trixster" >              
+            <li> The Cross Country Speester!</li> <img class="ForSalePromo" src="images/speedster.jpg" alt="Speedster">            
+            <li> Relaxed Town Cruiser! </li> <img class="ForSalePromo" src="images/Cruiser.jpg" alt="Cruiser">
+            <li> The Ole Timer! </li><img class="ForSalePromo" src="images/OleTimer.jpg" alt="OleTimer">
+        </ul>
+        <nav class="index-nav">
+            <ul>
+                <li><a>Please route all complaints to <a href="https://siu.edu/">Complaints department's home page</a></li>
+            </ul>
+            <!-- Implement some looped piano-->
+        </nav>           
+        <audio id="myaudio" controls autoplay loop>
+            <source src="media/piano.mp3" alt="audio controls">
+        </audio>
+    </main>
+</body>
+<footer class="index-footer">
+     <h3>Tuesday - Saturday 10 am - 9 pm <br>•<br> Sunday 9 am - 3 pm <br>•<br> Closed Monday<br> • </h3>
+</footer>
+</html>

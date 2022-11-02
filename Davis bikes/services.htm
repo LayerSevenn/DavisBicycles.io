@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--****************************************************************
+This is the sales page for our
+Web Based Applications course.
+Written, verified, and posted  by Alexander Davis on 10/24/2022
+******************************************************************-->
+<html lang="en-US">
+<head>
+    <link rel="shortcut icon" href="images/favicon.ico"> 
+    <title> Bicycle Services </title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Implement the Slicknav plugin-->
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>    
+</head>
+    <meta charset="utf-8">
+    <body>
+        <header> Welcome to our Bicycle Maintenance & Repair page!</header>
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="services.htm"> Service </a></li>
+                <li><a href="rentals.htm"> Rentals </a></li>
+                <li><a href="sales.htm"> Sales </a></li>
+                <li><a href="contact.htm"> Contact </a></li>
+                <li><a href="index.htm"> Home </a></li>
+            </ul>
+        </nav>
+        <!-- Create our table!-->
+        <table>
+            <thead>
+                <tr>
+                    <th class="left">Services</th>
+                    <th>Procedure</th>
+                    <th>Service Pricing</th>
+                </tr>
+            </thead>
+            <!-- Establish the service and pricing-->
+            <tbody>
+                <tr>
+                    <td class="left" id="category"><em><b>Routine Maintanence</b></em></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td class="left">Safety Checks</td>
+                    <td>Comprehensive examination of dynamic and safety components</td>
+                    <td class=>Time: 1 hour Price: &#36;40.00</td>
+                </tr>
+                <tr>
+                    <td class="left">Clean up and Lube</td>
+                    <td>Clean the exterior and lubricate the dynamic drivetrain</td>
+                    <td>Time: .5 Hour - Price: &#36;20.00</td>
+                </tr>
+                <tr>
+                    <td class="left">Adjust Wheel Hubs</td>
+                    <td>Comprehensive inspection and adjustment of the wheel hubs</td>
+                    <td>Time: 1 Hour - Price: &#36;40.00</td>
+                </tr>
+                <tr>
+                    <td class="left">Brake Adjustments</td>
+                    <td>Comprehensive inspection and adjustment of the brake system</td>
+                    <td>Time: 1 hour  - Price &#36;40.00 </td>
+                </tr>
+                <tr>
+                    <td class="left" >Seat and Handlebar Adjustments</td>
+                    <td>Adjustment the handelbars and seat to meet the needs of the rider</td>
+                    <td>Time: .5 hour - Price: &#36;20.00 </td>
+                </tr>
+                <tr>
+                    <td class="left">Calibrate Gears</td>
+                    <td>Comprehensive inspection and calibration of the gears</td>
+                    <td>Time: 1 Hour - Price: &#36;40.00</td>
+                </tr>
+                </tr>
+                <tr>
+                    <td class="left" id="category"><em><b>Repair Services</b></em></td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td class="left">Tire Repair</td>
+                    <td>Evaluation and repair of the tire and inner-tube</td>
+                    <td>Time: 1 Hour - Price: &#36;20.00</td>
+                </tr>
+                <tr>
+                    <td class="left">Cable Replacement</td>
+                    <td>Removal and Installation of the cable system</td>
+                    <td>Time: Varies - Price: &#36;40.00 labor, cost for parts vary</td>
+                </tr>
+                <tr>
+                    <td class="left">Parts Replacement</td>
+                    <td>Removal and Installation of customer requested components</td>
+                    <td>Time: Varies - Price of parts vary, shop labor rate is 40.00 an hour</td>
+                </tr>
+                <tr>
+                    <td class="left">Repair Bike Chain</td>
+                    <td>Lubrication and repair of the Bike chain and links</td>
+                    <td>Time: .5 hour - Price: &#36;20.00</td>
+                </tr>
+                <tr>
+                    <td class="left">Other Miscellaneous Repairs</td>
+                    <td>Other repairs not mentioned</td>
+                    <td>Time: Varies - Prices vary depending on service required</td>                          
+                </tr>
+            </tbody>
+            <tfoot>
+                <th class="left">Thanks for considering our services!</th>
+                <td> </td>
+                <td> </td>
+            </tfoot>
+        </table>
+</body>
+</html>
